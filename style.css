@@ -7,26 +7,159 @@
 body {
   display: flex;
   flex-direction: column;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
+  padding: 0;
+  margin: 0;
+  color: #f9faf8;
 }
 
 header {
+  background-color: #1f2937;
+  padding: 1em 13em;
   display: flex;
   justify-content: space-between;
-}
-
-.logo img {
-  height: 60px;
-  width: auto;
+  align-items: center;
 }
 
 .header-links {
   display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  color: #f9faf8;
+}
+
+.awesome {
+  padding: 1em 13em;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  background-color: #1f2937;
+}
+
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #f9faf8;
+}
+
+.right {
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.right img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  width: 120px;
+  font-size: 18px;
+  padding: 5px 5px;
+  background-color: #3882f6;
+  border-radius: 8px;
+  border: none;
+  color: #f9faf8;
+}
+
+.info {
+  padding: 1em 13em;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.card {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+}
+.square {
+  width: 160px;
+  height: 160px;
+  border: 4px solid #3882f6;
+  border-radius: 20px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  padding: 5em 13em;
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
+.quote em {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+.quote p {
+  align-self: flex-end;
+}
+
+.signup-container {
+  padding: 1em 13em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-right {
+  align-self: center;
+}
+
+.signup {
+  margin: 3em 0;
+  padding: 3em 4em;
+  display: flex;
+  background-color: #3882f6;
+  border-radius: 10px;
+  color: #f9faf8;
+  gap: 40px;
+}
+
+.signup > button {
+  border: 1px solid #ffffff;
+}
+
+footer {
+  padding: 1em 13em;
+  background-color: #1f2937;
+  text-align: center;
+  color: #f9faf8;
+}
+
+.logo {
+  padding: 0;
+  margin: 0;
+}
+
+.logo img {
+  height: 36px;
+  width: 36px;
 }
